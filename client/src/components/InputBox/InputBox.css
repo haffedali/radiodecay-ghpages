@@ -1,0 +1,21 @@
+.input-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    width: 25%;
+    margin: 10px;
+
+}
+
+.label {
+    color: black;
+    font-size: 14px;
+    margin: 5px;
+    margin-right: 15px;    
+}
+
+.measure {
+    width: 30%
+}
