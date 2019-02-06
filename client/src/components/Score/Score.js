@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import "./Score.css"
 
 class Score extends Component{
-    state = {
-        answer: 0
-    }
+
     // solver = setInterval(this.calc, 1000)
 
     // calc(){

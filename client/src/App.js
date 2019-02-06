@@ -16,7 +16,8 @@ class App extends Component {
     let InitAmount = this.state.InitAmount
     let HalfLife = this.state.HalfLife
     let DecayTime = this.state.DecayTime
-    let answer = InitAmount * (Math.log(2) * (DecayTime/HalfLife))
+    let ht = DecayTime/HalfLife
+    let answer = InitAmount * Math.pow(.5, ht)
     this.setState({
         answer: answer
     })
@@ -35,7 +36,9 @@ class App extends Component {
     this.setState({
       DecayTime: value
     })
+    // this.calc()
   }
+
 
   render() {
     return (
