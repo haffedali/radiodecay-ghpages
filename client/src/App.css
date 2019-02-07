@@ -16,8 +16,9 @@
 }
 
 .mainbox {
-  height: 300px;
-  width: 40%;
+  position: relative;
+  height: 400px;
+  width: 50%;
   background-color: white;
   outline-style: dotted;
   outline-color: blue;
@@ -28,6 +29,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.answer-component{
+  position: absolute;
+  bottom: 0px;
 }
 
 
