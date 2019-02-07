@@ -16,6 +16,13 @@
     margin-right: 15px;    
 }
 
+.uom {
+    color: black;
+    font-size: 14px;
+    margin: 5px;
+    margin-right: 15px; 
+}
+
 .measure {
     width: 30%
 }

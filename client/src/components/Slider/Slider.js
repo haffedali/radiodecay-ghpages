@@ -11,13 +11,6 @@ class Slider extends Component{
         })
     }
 
-    handleSlider = event => {
-        let decay = this.state.value
-        this.setState({
-            value: decay
-        })
-    }
-
     render(){
         return(
             <div>

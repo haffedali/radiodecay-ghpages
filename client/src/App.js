@@ -16,6 +16,7 @@ class App extends Component {
     finalAtom: 0
   }
 
+  //function to calculate the remaining Sample, and after it runs atomCalc
   calc(){
     var InitAmount = this.state.InitAmount
     var HalfLife = this.state.HalfLife
@@ -29,6 +30,7 @@ class App extends Component {
     }
   }
 
+  //Calculates the atoms needed (Empty Atoms, Full Atoms, and the last Partially full atom)
   atomCalc(){
     let finalAtom = this.state.answer;
     let InitAmount = this.state.InitAmount
@@ -56,6 +58,8 @@ class App extends Component {
     })
   }
 
+
+  //Created trigger to fire off calc every second
   trigger() {
     setInterval(() => { 
         this.calc()
@@ -65,15 +69,17 @@ class App extends Component {
   componentDidMount(){
     this.trigger()
   }
+
+
   render() {
     return (
       <div className="App">
         <div className="backer">
           <div className="mainbox">
-              <InputBox handleInputChange={this.handleInputChange} numValue = {this.state.InitAmount} label="InitAmount"/>
-              <InputBox handleInputChange={this.handleInputChange} numValue = {this.state.HalfLife} label="HalfLife"/>
+              <InputBox handleInputChange={this.handleInputChange} numValue = {this.state.InitAmount} label="InitAmount" uom="g"/>
+              <InputBox handleInputChange={this.handleInputChange} numValue = {this.state.HalfLife} label="HalfLife" uom="years"/>
             <div className="decay-slider-pair">
-                <InputBox handleInputChange={this.handleInputChange} numValue = {this.state.DecayTime} label="DecayTime"/>
+                <InputBox handleInputChange={this.handleInputChange} numValue = {this.state.DecayTime} label="DecayTime" uom="years"/>
                 <Slider className="slider-component" handleSlider = {this.handleSlider} decay={this.state.DecayTime}/>
             </div>
               <Atoms atoms={this.state.atoms} finalAtom={this.state.finalAtom} orangeAtoms={this.state.orangeAtoms}/>
