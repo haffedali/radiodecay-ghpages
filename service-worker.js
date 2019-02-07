@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/[your-user-name].github.io/[your-repo-name]/precache-manifest.59987c342218de05a140e7ffce053a45.js"
+  "/radiodecay-ghpages/precache-manifest.42731c2a125923378ca2e51441d2d3e5.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/[your-user-name].github.io/[your-repo-name]/index.html", {
+workbox.routing.registerNavigationRoute("/radiodecay-ghpages/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
