@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/radiodecay-ghpages/precache-manifest.42731c2a125923378ca2e51441d2d3e5.js"
+  "/radiodecay-ghpages/precache-manifest.6b664aa3cb65ca78f5a642109055a969.js"
 );
 
 workbox.clientsClaim();
